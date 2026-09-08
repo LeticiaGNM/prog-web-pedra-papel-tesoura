@@ -32,7 +32,7 @@ Não é necessário realizar uma instalação. Para executar o jogo localmente, 
 
 A versão publicada do jogo está disponível em:
 
-**[COLOCAR O LINK DO GITHUB PAGES AQUI]**
+**https://leticiagnm.github.io/prog-web-pedra-papel-tesoura/**
 
 ## Informações
 
