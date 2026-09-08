@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #f6f7fb;
+}
+
+/* CABEÇALHO */
+
+header {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+/* CAIXA DO JOGO */
+
+.conteiner {
+    padding: 2rem 7rem;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* PLACAR */
+
+.placar {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* IMAGENS DO RESULTADO */
+
+.imagens_resultado {
+    display: flex;
+    column-gap: 7rem;
+}
+
+.conteiner.start .resultado_usuario {
+    transform-origin: left;
+    animation: userShake 0.7s ease infinite;
+}
+
+@keyframes userShake {
+    50% {
+        transform: rotate(10deg);
+    }
+}
+
+.conteiner.start .resultado_pc {
+    transform-origin: right;
+    animation: pcShake 0.7s ease infinite;
+}
+
+@keyframes pcShake {
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+.imagens_resultado img {
+    width: 100px;
+}
+
+.resultado_pc img {
+    transform: rotate(180deg) rotateX(180deg);
+}
+
+/* RESULTADO DA RODADA */
+
+.resultado {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+
+/* OPÇÕES */
+
+.opcao_imagem img {
+    width: 50px;
+}
+
+.opcoes_imagens {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+}
+
+.conteiner.start .opcoes_imagens {
+    pointer-events: none;
+}
+
+.opcao_imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.opcao_imagem:hover {
+    opacity: 1;
+}
+
+.opcao_imagem.ativa {
+    opacity: 1;
+}
+
+.opcao_imagem img {
+    pointer-events: none;
+}
+
+.opcao_imagem p {
+    font-size: 1.235rem;
+    margin-top: 1rem;
+}
+
+/* BOTÃO DE REINICIAR */
+
+#botao_reiniciar {
+    display: none;
+    margin: 2rem auto 0;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#botao_reiniciar:hover {
+    background: #555;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+

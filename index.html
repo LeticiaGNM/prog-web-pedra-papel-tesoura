@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedra, Papel e Tesoura</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Pedra, Papel e Tesoura</h1>
+            <p>Melhor de 3</p>
+        </header>
+
+        <section class="conteiner">
+
+            <div class="campo_resultado">
+
+                <div class="placar">
+                    <span>Você: <strong id="pontos_usuario">0</strong></span>
+                    <span>Computador: <strong id="pontos_pc">0</strong></span>
+                </div>
+
+                <div class="imagens_resultado">
+                    <span class="resultado_usuario">
+                        <img src="img_pedra.png" alt="Escolha do usuário">
+                    </span>
+
+                    <span class="resultado_pc">
+                        <img src="img_pedra.png" alt="Escolha do computador">
+                    </span>
+                </div>
+
+                <div class="resultado">Vamos Jogar!</div>
+
+            </div>
+
+            <div class="opcoes_imagens">
+
+                <span class="opcao_imagem">
+                    <img src="img_pedra.png" alt="Pedra">
+                    <p>Pedra</p>
+                </span>
+
+                <span class="opcao_imagem">
+                    <img src="img_papel.png" alt="Papel">
+                    <p>Papel</p>
+                </span>
+
+                <span class="opcao_imagem">
+                    <img src="img_tesoura.png" alt="Tesoura">
+                    <p>Tesoura</p>
+                </span>
+
+            </div>
+
+            <button id="botao_reiniciar">Reiniciar Jogo</button>
+
+        </section>
+
+        <footer>
+            <p>Desenvolvido por Leticia Gabriella Nascimento de Morais &copy; 2026</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+
+        <script src="script.js" defer></script>
+
+    </body>
+</html>
